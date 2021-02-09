@@ -1,0 +1,335 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+img{
+    object-fit: cover;
+}
+
+.contenedor{
+    font-size: 16px;
+    width: 90%;
+    max-width: 75em;
+    overflow: hidden;
+    margin: auto;
+    padding: 3.75em 0;
+}
+
+.header{
+    height: 100vh;
+    background-image: 
+    linear-gradient(120deg, rgba(137, 246, 254, .5) 0%, rgba(102, 166, 255, .5) 100%),
+    url(../Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 16px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 0.9375rem;
+}
+
+.menu a{
+    font-size: 1.25em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 .9375rem;
+}
+
+.textos{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.frase{
+    font-size: 3.125em;
+    margin-bottom: .9375rem;
+}
+
+.parrafo{
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+/** NUESTROS SERVICIOS **/
+
+
+.titulo-seccion{
+    font-size: 2.5rem;
+    color: #8ac1d0;
+    text-align: center;
+    font-weight: 300;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicio-imagen{
+    width: 40%;
+}
+
+.texto-servicio{
+    width: 45%;
+    font-size: 16px;
+}
+
+.nombre-servicio{
+    color: #8ac1d0;
+    font-weight: 700;
+    margin: 10px 0;
+    
+}
+
+.numero{
+    display: inline-block;
+    width: 1.875em;
+    height: 1.875em;
+    background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.875em;
+    margin: 0 5px;
+}
+
+.galeria{
+    background: #f2f2f2;
+}
+
+
+.contenedor-trabajos{
+    font-size: 16px;
+    margin-top: 1.25em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+.contenedor-trabajos img{
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+/** SOMOS EXPERTOS EN: **/
+
+.expertos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-expertos{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subtitulo{
+    display: inline-block;
+    margin-top: .9375rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+/** CONTACTO **/
+
+footer{
+   
+    background-color: #8ac1d0;
+    padding-bottom: 0.1px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 3.75em;
+    padding-bottom: 2.5em;
+    color: #fff;
+}
+
+.nombre-frase{
+    width: 40%;
+}
+
+.nombre-frase h2{
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.nombre-frase p{
+    font-weight: 400;
+}
+
+.redes-sociales{
+    font-size: 16px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.redes-iconos{
+    display: inline-block;
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-left:10px ;
+}
+
+.redes-sociales a{
+    color: #fff;
+}
+
+.redes-sociales i{
+    font-size: 1.875em;
+    line-height: 3.75rem;
+}
+
+.redes-iconos:hover{
+    background-color: #fff;
+    color: #54b8d3;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+/** MEDIA QUERYS **/
+
+@media screen and (max-width: 800px){
+    /** MENU DE NAVEGACION **/
+    .header{
+        height: 70vh;
+    }
+
+    .menu a{
+        font-size: 1em;
+        padding: .625rem;
+    }
+    
+    .frase{
+        font-size: 31px;
+    }
+
+    .parrafo{
+        font-size: 18px;
+    } 
+
+     /** SERVICIOS **/
+    .contenedor-servicio{
+        flex-direction: column;
+    }
+
+    .servicio-imagen{
+        width: 65%;
+    }
+
+    .texto-servicio{
+        width: 60%;
+    }
+
+     /** GALERIA DE TRABAJO **/
+     .contenedor-trabajos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+
+     /** EXPERTOS EN: **/
+    .expertos{
+        flex-direction: column;
+    }
+
+    .contenedor-expertos{
+        width: 60%;
+    }
+
+    .subtitulo{
+        font-size: 1.125rem;
+    }
+
+     /** CONTACTO **/
+    .contacto{
+        flex-direction: column;
+    }
+    
+    .nombre-frase {
+        width: 70%;
+    }
+    
+    .redes-sociales{
+       justify-content: flex-start;
+       align-items: center;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .menu a{
+        font-size: 12px;
+        padding: .5rem;
+    }
+
+    .frase{
+        font-size: 28px;
+    }
+
+    .parrafo{
+        font-size: 16px;
+    }
+    
+     /** GALERIA DE TRABAJO **/
+     .contenedor-trabajos{
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    /** EXPERTOS EN: **/
+    .contenedor-expertos{
+        width: 70%;
+    }
+
+     /** CONTACTO **/
+    
+    .nombre-frase {
+        width: 100%;
+    }
+}
+
+
+
